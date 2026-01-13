@@ -6,6 +6,9 @@ public class GIT_Test {
 		// TODO Auto-generated method stub
 		
 		System.out.println("This is my GIT commit test");
+		
+		System.out.println("Added from eclipse old workspace");		
+		
 
 	}
 
