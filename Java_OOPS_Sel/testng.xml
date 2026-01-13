@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="utilities.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="url" value="https://google.com"></parameter>
+  <parameter name="headless" value="headless"></parameter>
+  <parameter name="headless1" value="headless1"></parameter>
+  	<classes>
+  		<class name="javaOOPS.BaseTests"></class>
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

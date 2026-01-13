@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Intelligent Portfolio">
+<listeners>
+<listener class-name="test.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Account Open">
+    <classes>
+      <class name="test.Day_One_Basics_1">
+      		<methods>
+      			<include name="Hello1"/>
+      			<include name="Hello2"/>
+				<include name="Hello3"/>
+				<include name="Hello4"/>
+      		</methods>
+      </class>
+      <class name="test.Day_One_Basics_2">
+      		<methods>
+      			<include name="Hello5"/>
+      			<include name="Hello6"/>
+      			<exclude name="Hello7"/>
+      			<include name="Hello8"/>
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Transfers">
+    <classes>
+      <class name="test.Day_One_Basics_3">
+      		<methods>
+      			<include name="Hello9"/>
+      			<include name="Hello10"/>
+      			<include name="Hello11"/>
+      			<include name="Hello12"/>
+      		</methods>
+      </class>
+      <class name="test.Day_One_Basics_4">
+      		<methods>
+      			<include name="Hello13"/>
+      			<include name="Hello14"/>
+      			<include name="Hello15"/>
+      			<include name="Hello16"/>
+      		</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
