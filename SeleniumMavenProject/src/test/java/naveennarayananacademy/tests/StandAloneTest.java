@@ -1,5 +1,6 @@
 package naveennarayananacademy.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -88,6 +89,11 @@ public class StandAloneTest extends BaseTests {
 		
 		ConfirmationPage confPage = new ConfirmationPage(getDriver());
 		confPage.validateProductOnFinalPage(data.get("prodname"));	
+	}
+	
+	@Test
+	public void newTest() {
+		Assert.fail();
 	}
 
 }
