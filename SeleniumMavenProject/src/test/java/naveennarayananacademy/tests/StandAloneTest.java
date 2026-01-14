@@ -1,21 +1,15 @@
 package naveennarayananacademy.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-
-import org.openqa.selenium.*;
-import org.testng.annotations.Test;
-
 import naveennarayananacademy.pageobjectmodel.CheckOutPage;
 import naveennarayananacademy.pageobjectmodel.ConfirmationPage;
 import naveennarayananacademy.pageobjectmodel.LandingPage;
 import naveennarayananacademy.pageobjectmodel.ProductCartPage;
 import naveennarayananacademy.testComponents.BaseTests;
-import naveennarayananacademy.testComponents.RetryAnalyzer;
 
 public class StandAloneTest extends BaseTests {
 	
@@ -75,7 +69,7 @@ public class StandAloneTest extends BaseTests {
 		};
 	}
 	
-	@Test(groups="E2E", dataProvider = "loginData")
+	@Test(groups={"E2E","Functional"}, dataProvider = "loginData")
 	public void validateProductOnConfirmationPage_with_JSON(HashMap <String,String> data) {
 		LandingPage lp = new LandingPage(getDriver());
 		lp.login(data.get("username"), data.get("password"));
@@ -89,13 +83,6 @@ public class StandAloneTest extends BaseTests {
 		
 		ConfirmationPage confPage = new ConfirmationPage(getDriver());
 		confPage.validateProductOnFinalPage(data.get("prodname"));	
-	}
-	
-	@Test
-	public void newTest() {
-		System.out.println("Commit from my develop branch");
-		System.out.println("Testing merge from terninal");
-		Assert.fail();
 	}
 
 }
