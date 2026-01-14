@@ -93,6 +93,7 @@ public class StandAloneTest extends BaseTests {
 	
 	@Test
 	public void newTest() {
+		System.out.println("Commit from my develop branch");
 		Assert.fail();
 	}
 
