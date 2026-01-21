@@ -1,7 +1,6 @@
 package seleniumInDepth;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import dev.failsafe.internal.util.Assert;
 
 import java.time.Duration;
 import java.time.LocalDate;
