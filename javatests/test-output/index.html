@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="naveennarayananacademy.javatests.ApiTests" class="method navigator-link" hash-for-method="registerUserRegister_usingPOJO({&quot;name&quot;:&quot;dimplekapadia1774744789132&quot;,&quot;email&quot;:&quot;dimplekapadia+1774744789133@gmail.com&quot;,&quot;password&quot;:&quot;Tes...)">registerUserRegister_usingPOJO({"name":"dimplekapadia1774744789132","email":"dimplekapadia+1774744789133@gmail.com","password":"Tes...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="naveennarayananacademy.javatests.ApiTests" class="method navigator-link" hash-for-method="loginWithValidData({&quot;email&quot;:&quot;dimplekapadia@gmail.com&quot;,&quot;password&quot;:&quot;Test1234&quot;})">loginWithValidData({"email":"dimplekapadia@gmail.com","password":"Test1234"})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,10 +126,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUserRegister_usingPOJO({&quot;name&quot;:&quot;dimplekapadia1774744789132&quot;,&quot;email&quot;:&quot;dimplekapadia+1774744789133@gmail.com&quot;,&quot;password&quot;:&quot;Tes...)">
-                  </a> <!-- registerUserRegister_usingPOJO({"name":"dimplekapadia1774744789132","email":"dimplekapadia+1774744789133@gmail.com","password":"Tes...) -->
-                  <span class="method-name">registerUserRegister_usingPOJO</span>
-                  <span class="parameters">({"name":"dimplekapadia1774744789132","email":"dimplekapadia+1774744789133@gmail.com","password":"Test1234"})</span>
+                  <a name="loginWithValidData({&quot;email&quot;:&quot;dimplekapadia@gmail.com&quot;,&quot;password&quot;:&quot;Test1234&quot;})">
+                  </a> <!-- loginWithValidData({"email":"dimplekapadia@gmail.com","password":"Test1234"}) -->
+                  <span class="method-name">loginWithValidData</span>
+                  <span class="parameters">({"email":"dimplekapadia@gmail.com","password":"Test1234"})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/bh/0xdzph6512b9j7d0hj59znth0000gn/T/testng-eclipse--1306459302/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/bh/0xdzph6512b9j7d0hj59znth0000gn/T/testng-eclipse--108630940/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +148,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;naveennarayananacademy.javatests.ApiTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;registerUserRegister_usingPOJO&quot;/&gt;
+          &lt;include name=&quot;loginWithValidData&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- naveennarayananacademy.javatests.ApiTests --&gt;
     &lt;/classes&gt;
@@ -192,9 +192,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registerUserRegister_usingPOJO')
+data.setCell(0, 1, 'loginWithValidData')
 data.setCell(0, 2, 'naveennarayananacademy.javatests.ApiTests')
-data.setCell(0, 3, 1556);
+data.setCell(0, 3, 1510);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -214,7 +214,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -223,6 +223,10 @@ return data;
                 <span class="ignored-method-name">registerUserRegisterJSONFile</span>
                 <br/>
                 <span class="ignored-method-name">registerUserRegister</span>
+                <br/>
+                <span class="ignored-method-name">registerUserRegister_usingPOJO</span>
+                <br/>
+                <span class="ignored-method-name">registerUserDuplicateData_usingPOJO</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -239,9 +243,13 @@ return data;
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">createRequestSpecification</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">registerUserRegister_usingPOJO({"name":"dimplekapadia1774744789132","email":"dimplekapadia+1774744789133@gmail.com","password":"Tes...)</span>
-                <span class="method-start">273 ms</span>
+                <span class="method-name">loginWithValidData({"email":"dimplekapadia@gmail.com","password":"Test1234"})</span>
+                <span class="method-start">355 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

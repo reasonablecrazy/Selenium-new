@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-01/schema#",
+	"title":"Login Response with valid credentials",
+	"type":"object",
+	"additionalProperties":false,
+	"required":["success","status","message","data"],
+	"properties":{
+		"success":{
+			"type":"boolean"
+		},
+		"status":{
+			"type":"integer"
+		},
+		"message":{
+			"type":"string"
+		},
+		"data":{
+			"type":"object",
+			"required":["id","name","email","token"],
+			"additionalProperties":false,
+			"properties":{
+				"id":{
+					"type":"string"
+				},
+				"name":{
+					"type":"string"
+				},
+				"email":{
+					"type":"string"
+				},
+				"token":{
+					"token":"string"
+				}
+			}
+		}
+	}
+	
+}

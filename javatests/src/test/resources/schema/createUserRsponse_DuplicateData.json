@@ -1,0 +1,17 @@
+{
+	"description" : "JSON response for duplicate payload",
+	"type" : "object",
+	"required" : ["success", "status", "message"],
+	"additionalProperties": false, 
+	"properties" : {
+		"success":{
+			"type": "boolean"
+		},
+		"status" :{
+			"type" : "integer"
+		},
+		"message":{
+			"type":"string"
+		}
+	}
+}

@@ -5,8 +5,9 @@
     <classes>
       <class name="naveennarayananacademy.javatests.ApiTests">
         <methods>
+          <include name="createRequestSpecification"/>
+          <include name="loginWithValidData" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="registerUserRegister_usingPOJO" invocation-numbers="0"/>
         </methods>
       </class> <!-- naveennarayananacademy.javatests.ApiTests -->
     </classes>
